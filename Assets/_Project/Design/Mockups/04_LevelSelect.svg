@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <rect width="1920" height="1080" fill="#D9F3FF"/>
+  <path d="M0 690 C260 590 420 700 680 610 C980 500 1220 670 1510 570 C1700 510 1830 540 1920 500 L1920 1080 L0 1080 Z" fill="#FFFFFF" opacity="0.54"/>
+  <g font-family="Arial" font-weight="800">
+    <circle cx="96" cy="88" r="44" fill="#FFFFFF"/>
+    <text x="96" y="103" text-anchor="middle" font-size="44" fill="#1C2632">‹</text>
+    <text x="220" y="105" font-size="46" fill="#1C2632">CO THANH THIEN DANG</text>
+    <rect x="1520" y="54" width="290" height="72" rx="24" fill="#FFFFFF" opacity="0.9"/>
+    <text x="1665" y="101" text-anchor="middle" font-size="30" fill="#1C2632">18 / 30 STARS</text>
+  </g>
+  <path d="M250 620 C460 420 640 720 820 520 C1000 320 1170 640 1370 470 C1490 370 1580 400 1680 330" fill="none" stroke="#F4C95D" stroke-width="18" stroke-linecap="round" stroke-dasharray="2 34"/>
+  <g font-family="Arial" font-weight="800" text-anchor="middle">
+    <circle cx="250" cy="620" r="58" fill="#49C7A3"/><text x="250" y="634" font-size="38" fill="#FFFFFF">1</text>
+    <text x="250" y="710" font-size="28" fill="#F4C95D">★★★</text>
+    <circle cx="520" cy="515" r="58" fill="#49C7A3"/><text x="520" y="529" font-size="38" fill="#FFFFFF">2</text>
+    <text x="520" y="605" font-size="28" fill="#F4C95D">★★★</text>
+    <circle cx="820" cy="520" r="58" fill="#49C7A3"/><text x="820" y="534" font-size="38" fill="#FFFFFF">3</text>
+    <text x="820" y="610" font-size="28" fill="#F4C95D">★★☆</text>
+    <circle cx="1110" cy="480" r="58" fill="#FFFFFF" stroke="#49C7A3" stroke-width="10"/><text x="1110" y="494" font-size="38" fill="#1C2632">4</text>
+    <circle cx="1390" cy="455" r="58" fill="#FFFFFF" stroke="#C8D7D9" stroke-width="10"/><text x="1390" y="469" font-size="38" fill="#1C2632">5</text>
+    <circle cx="1680" cy="330" r="74" fill="#F05A45"/><text x="1680" y="344" font-size="38" fill="#FFFFFF">BOSS</text>
+  </g>
+  <g font-family="Arial" font-weight="800">
+    <rect x="250" y="780" width="1420" height="180" rx="34" fill="#FFF7E5" opacity="0.95"/>
+    <text x="310" y="840" font-size="38" fill="#1C2632">Level 4 - Lantern Gate Trial</text>
+    <text x="310" y="895" font-size="30" fill="#1C2632">Goals: Finish • 20,000 score • No damage</text>
+    <rect x="1330" y="825" width="250" height="86" rx="28" fill="#F4C95D"/>
+    <text x="1455" y="880" text-anchor="middle" font-size="36" fill="#1C2632">PLAY</text>
+  </g>
+</svg>
+

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4B93C8"/>
+      <stop offset="1" stop-color="#D9F3FF"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1C2632" flood-opacity="0.24"/></filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <path d="M0 780 C300 670 520 820 830 730 C1110 650 1320 780 1600 700 C1760 655 1860 680 1920 650 L1920 1080 L0 1080 Z" fill="#FFFFFF" opacity="0.65"/>
+  <g filter="url(#shadow)">
+    <rect x="420" y="116" width="1080" height="820" rx="40" fill="#FFF7E5" opacity="0.96"/>
+  </g>
+  <g font-family="Arial" font-weight="800" text-anchor="middle">
+    <text x="960" y="220" font-size="62" fill="#1C2632">VICTORY</text>
+    <text x="760" y="340" font-size="92" fill="#F4C95D">★</text>
+    <text x="960" y="340" font-size="110" fill="#F4C95D">★</text>
+    <text x="1160" y="340" font-size="92" fill="#F4C95D">★</text>
+  </g>
+  <g font-family="Arial" font-weight="800">
+    <rect x="560" y="420" width="800" height="74" rx="22" fill="#FFFFFF" opacity="0.85"/>
+    <text x="610" y="468" font-size="32" fill="#1C2632">Score</text>
+    <text x="1305" y="468" text-anchor="end" font-size="32" fill="#1C2632">28,450</text>
+    <rect x="560" y="515" width="800" height="74" rx="22" fill="#FFFFFF" opacity="0.85"/>
+    <text x="610" y="563" font-size="32" fill="#1C2632">Linh Khi</text>
+    <text x="1305" y="563" text-anchor="end" font-size="32" fill="#49C7A3">186</text>
+    <rect x="560" y="610" width="800" height="74" rx="22" fill="#FFFFFF" opacity="0.85"/>
+    <text x="610" y="658" font-size="32" fill="#1C2632">Max Combo</text>
+    <text x="1305" y="658" text-anchor="end" font-size="32" fill="#E94F72">x32</text>
+    <rect x="560" y="720" width="380" height="86" rx="28" fill="#FFFFFF"/>
+    <text x="750" y="775" text-anchor="middle" font-size="36" fill="#1C2632">REPLAY</text>
+    <rect x="980" y="720" width="380" height="86" rx="28" fill="#F4C95D"/>
+    <text x="1170" y="775" text-anchor="middle" font-size="36" fill="#1C2632">NEXT</text>
+  </g>
+</svg>
+

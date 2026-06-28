@@ -1,14 +1,24 @@
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+namespace PhiKiemSongHanh.Characters
 {
-    [Header("Player")]
-    [SerializeField] private Transform _cameraTarget;
-
-    private void CameraFollow()
+    public class PlayerController : MonoBehaviour
     {
-        if (_cameraTarget != null)
+        [Header("Player")]
+        [SerializeField] private Transform _cameraTarget;
+
+        private void Update()
         {
+            FollowCameraTarget();
+        }
+
+        private void FollowCameraTarget()
+        {
+            if (_cameraTarget == null)
+            {
+                return;
+            }
+
             transform.position = _cameraTarget.position;
             transform.rotation = _cameraTarget.rotation;
         }

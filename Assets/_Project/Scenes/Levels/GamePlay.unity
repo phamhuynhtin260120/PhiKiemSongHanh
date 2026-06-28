@@ -745,7 +745,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67acbe6e844fd4da1b7ca09ae22d630f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  m_EditorClassIdentifier: Assembly-CSharp::PhiKiemSongHanh.Core.GameManager
   _playerPrefab: {fileID: 9191317671289541332, guid: 6f7dba11bcaa74a5fa5b5bb0731d5893, type: 3}
   _playerPrefab2: {fileID: 9191317671289541332, guid: 9a73e8c53030c40d3af75819e26f924a, type: 3}
   _spawnPoints:

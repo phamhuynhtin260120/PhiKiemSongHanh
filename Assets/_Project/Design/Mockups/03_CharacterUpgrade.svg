@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <rect width="1920" height="1080" fill="#D9F3FF"/>
+  <path d="M0 880 C310 760 520 900 850 800 C1120 720 1390 860 1660 780 C1800 740 1880 760 1920 750 L1920 1080 L0 1080 Z" fill="#FFFFFF" opacity="0.7"/>
+  <g font-family="Arial" font-weight="800">
+    <circle cx="96" cy="88" r="44" fill="#FFFFFF"/>
+    <text x="96" y="103" text-anchor="middle" font-size="44" fill="#1C2632">‹</text>
+    <text x="220" y="105" font-size="46" fill="#1C2632">HEROES</text>
+    <rect x="1510" y="54" width="300" height="72" rx="24" fill="#FFFFFF" opacity="0.9"/>
+    <text x="1660" y="101" text-anchor="middle" font-size="30" fill="#1C2632">12,450 COINS</text>
+  </g>
+  <g>
+    <rect x="120" y="190" width="760" height="760" rx="32" fill="#FFF7E5" opacity="0.92"/>
+    <path d="M260 735 C390 540 610 520 750 735" fill="none" stroke="#41D9FF" stroke-width="22" stroke-linecap="round"/>
+    <circle cx="500" cy="365" r="86" fill="#41D9FF"/>
+    <rect x="414" y="465" width="172" height="230" rx="54" fill="#FFFFFF"/>
+    <text x="500" y="842" text-anchor="middle" font-family="Arial" font-size="44" font-weight="800" fill="#1C2632">Lang Phong</text>
+    <text x="500" y="890" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700" fill="#41D9FF">PHYSICAL SWORD</text>
+  </g>
+  <g font-family="Arial" font-weight="800">
+    <rect x="960" y="190" width="840" height="150" rx="28" fill="#FFFFFF" opacity="0.92"/>
+    <text x="1015" y="250" font-size="34" fill="#1C2632">ROLE</text>
+    <text x="1015" y="302" font-size="32" fill="#41D9FF">Break physical seals and cracked gates</text>
+    <rect x="960" y="370" width="840" height="250" rx="28" fill="#FFFFFF" opacity="0.92"/>
+    <text x="1015" y="430" font-size="34" fill="#1C2632">STATS</text>
+    <text x="1015" y="500" font-size="30" fill="#1C2632">Power</text>
+    <rect x="1180" y="474" width="520" height="28" rx="14" fill="#C8D7D9"/>
+    <rect x="1180" y="474" width="390" height="28" rx="14" fill="#41D9FF"/>
+    <text x="1015" y="560" font-size="30" fill="#1C2632">Energy</text>
+    <rect x="1180" y="534" width="520" height="28" rx="14" fill="#C8D7D9"/>
+    <rect x="1180" y="534" width="300" height="28" rx="14" fill="#49C7A3"/>
+    <rect x="960" y="650" width="840" height="150" rx="28" fill="#FFFFFF" opacity="0.92"/>
+    <text x="1015" y="710" font-size="34" fill="#1C2632">SKILL</text>
+    <text x="1015" y="762" font-size="32" fill="#1C2632">Pha Khong Tram - dash and break</text>
+    <rect x="960" y="840" width="390" height="86" rx="28" fill="#F4C95D"/>
+    <text x="1155" y="895" text-anchor="middle" font-size="36" fill="#1C2632">UPGRADE</text>
+    <rect x="1410" y="840" width="390" height="86" rx="28" fill="#49C7A3"/>
+    <text x="1605" y="895" text-anchor="middle" font-size="36" fill="#FFFFFF">EQUIP</text>
+  </g>
+</svg>
+

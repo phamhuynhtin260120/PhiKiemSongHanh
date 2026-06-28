@@ -2,7 +2,7 @@
 
 > Game casual hành động–giải đố theo màn, nơi người chơi điều khiển **hai kiếm khách** — **Lăng Phong** và **Nguyệt Dao** — bay qua một thế giới Đông Á huyền huyễn trên mây, chuyển đổi giữa hai nhân vật để xử lý đúng loại chướng ngại, thu thập linh khí và đánh bại boss.
 
-**Trạng thái:** `v0.1 — Concept / Pre-production`  ·  **Nền tảng:** Mobile (Landscape)  ·  **Engine:** Unity 6 (6000.3.10f1)
+**Trạng thái:** `v0.1 — Concept / Pre-production`  ·  **Nền tảng:** Mobile (Landscape)  ·  **Engine:** Unity 6 (6000.5.1f1)
 
 ---
 
@@ -118,7 +118,7 @@ Trải dài qua các vùng đất nổi của **Thiên Vân Quốc**:
 ## 🚀 Bắt đầu (Getting Started)
 
 ### Yêu cầu
-- **Unity 6 — `6000.3.10f1`** (cài đúng phiên bản qua Unity Hub để tránh lỗi tương thích).
+- **Unity 6 — `6000.5.1f1`** (cài đúng phiên bản qua Unity Hub để tránh lỗi tương thích).
 - Module build cho nền tảng mục tiêu (Android / iOS).
 - Git (kèm Git LFS được khuyến nghị cho asset nặng).
 
@@ -128,15 +128,20 @@ git clone <repo-url>
 cd PhiKiemSongHanh
 ```
 1. Mở **Unity Hub** → **Add** → trỏ tới thư mục dự án.
-2. Mở bằng đúng phiên bản Unity `6000.3.10f1`.
-3. Scene khởi đầu: `Assets/Scenes/SampleScene.unity`.
+2. Mở bằng đúng phiên bản Unity `6000.5.1f1`.
+3. Scene khởi đầu: `Assets/Scenes/SplashScreen.unity`.
 
 ### Cấu trúc thư mục
 ```
 PhiKiemSongHanh/
-├── Assets/                # Mã nguồn, scene, asset của game
-│   ├── Scenes/            # Các scene Unity
-│   └── InputSystem_Actions.inputactions   # Input System (mới)
+├── Assets/
+│   ├── Scenes/            # Boot/menu scenes dùng trong build
+│   ├── _Project/          # Gameplay scripts, prefabs, design docs, levels
+│   │   ├── Scenes/Levels/ # Gameplay/test level scenes
+│   │   ├── Scripts/       # Code runtime theo module
+│   │   ├── Prefabs/       # Prefab game-specific
+│   │   └── Design/        # Tài liệu thiết kế trong repo
+│   └── PlayerInput.inputactions
 ├── Packages/              # Khai báo package (manifest.json)
 ├── ProjectSettings/       # Cấu hình dự án Unity
 └── README.md
@@ -157,6 +162,7 @@ Tài liệu thiết kế đầy đủ được duy trì trên Notion, gồm 10 p
 - [`Assets/_Project/Design/GameplayDesign.md`](Assets/_Project/Design/GameplayDesign.md) — gameplay pillars, controls, switch timing, obstacles, scoring và cấu trúc level MVP.
 - [`Assets/_Project/Design/ArtAndContentBible.md`](Assets/_Project/Design/ArtAndContentBible.md) — định hướng hình ảnh, màu gameplay, nhân vật, thế giới, UI, VFX và audio.
 - [`Assets/_Project/Design/MVPBacklog.md`](Assets/_Project/Design/MVPBacklog.md) — milestone triển khai vertical slice theo thứ tự Movement → Switch → Obstacles → Scoring → Level → Polish.
+- [`Assets/_Project/Design/UI/README.md`](Assets/_Project/Design/UI/README.md) — thiết kế UI theo từng scene/panel để dựng Canvas trong Unity.
 
 ---
 

@@ -1,80 +1,103 @@
 using System.Collections;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+namespace PhiKiemSongHanh.Core
 {
-    [Header("Player")]
-    [SerializeField] private GameObject _playerPrefab;
-    [SerializeField] private GameObject _playerPrefab2;
-
-    [Header("Spawn Points")]
-    [SerializeField] private Transform[] _spawnPoints;
-    [SerializeField] private int _spawnPointIndex = 0;
-
-    [Header("Options")]
-    [SerializeField] private bool _spawnOnStart = true;
-
-    [Header("Time Delay")]
-    [SerializeField] private float _timeDelay = 2f;
-
-    private GameObject _currentPlayer;
-
-    public GameObject CurrentPlayer => _currentPlayer;
-
-    private void Start()
+    public class GameManager : MonoBehaviour
     {
-        if (_spawnOnStart)
+        [Header("Player")]
+        [SerializeField] private GameObject _playerPrefab;
+        [SerializeField] private GameObject _playerPrefab2;
+
+        [Header("Spawn Points")]
+        [SerializeField] private Transform[] _spawnPoints;
+        [SerializeField] private int _spawnPointIndex = 0;
+
+        [Header("Options")]
+        [SerializeField] private bool _spawnOnStart = true;
+
+        [Header("Time Delay")]
+        [SerializeField] private float _timeDelay = 2f;
+
+        private GameObject _currentPlayer;
+
+        public GameObject CurrentPlayer => _currentPlayer;
+
+        private void Start()
         {
-            StartCoroutine(SpawnPlayerAfterDelay());
+            if (_spawnOnStart)
+            {
+                StartCoroutine(SpawnPlayerAfterDelay());
+            }
         }
-    }
     
-    private IEnumerator SpawnPlayerAfterDelay()
-    {
-        if (_timeDelay > 0f)
+        private IEnumerator SpawnPlayerAfterDelay()
         {
-            yield return new WaitForSeconds(_timeDelay);
+            if (_timeDelay > 0f)
+            {
+                yield return new WaitForSeconds(_timeDelay);
+            }
+
+            SpawnPlayer();
         }
 
-        SpawnPlayer();
-    }
-
-    public GameObject SpawnPlayer()
-    {
-        return SpawnPlayerAt(_spawnPointIndex);
-    }
-
-    public GameObject SpawnPlayerAt(int index)
-    {
-        if (_playerPrefab == null)
+        public GameObject SpawnPlayer()
         {
-            Debug.LogError("[GameManager] Chưa gán Player Prefab.", this);
-            return null;
+            return SpawnPrimaryPlayer();
         }
 
-        Transform point = GetSpawnPoint(index);
-        if (point == null)
+        public GameObject SpawnPrimaryPlayer()
         {
-            Debug.LogError($"[GameManager] Spawn point index {index} không hợp lệ.", this);
-            return null;
+            return SpawnPlayerAt(_spawnPointIndex, _playerPrefab);
         }
 
-        _currentPlayer = Instantiate(_playerPrefab, point.position, point.rotation);
-        return _currentPlayer;
-    }
-
-    private Transform GetSpawnPoint(int index)
-    {
-        if (_spawnPoints == null || _spawnPoints.Length == 0)
+        public GameObject SpawnSecondaryPlayer()
         {
-            return null;
+            return SpawnPlayerAt(_spawnPointIndex, _playerPrefab2);
         }
 
-        if (index < 0 || index >= _spawnPoints.Length)
+        public GameObject SpawnPlayerAt(int index)
         {
-            return null;
+            return SpawnPlayerAt(index, _playerPrefab);
         }
 
-        return _spawnPoints[index];
+        private GameObject SpawnPlayerAt(int index, GameObject prefab)
+        {
+            if (prefab == null)
+            {
+                Debug.LogError("[GameManager] Chưa gán Player Prefab.", this);
+                return null;
+            }
+
+            Transform point = GetSpawnPoint(index);
+            if (point == null)
+            {
+                Debug.LogError($"[GameManager] Spawn point index {index} không hợp lệ.", this);
+                return null;
+            }
+
+            if (_currentPlayer != null)
+            {
+                Destroy(_currentPlayer);
+            }
+
+            _currentPlayer = Instantiate(prefab, point.position, point.rotation);
+            return _currentPlayer;
+        }
+
+        private Transform GetSpawnPoint(int index)
+        {
+            if (_spawnPoints == null || _spawnPoints.Length == 0)
+            {
+                return null;
+            }
+
+            if (index < 0 || index >= _spawnPoints.Length)
+            {
+                return null;
+            }
+
+            return _spawnPoints[index];
+        }
     }
 }

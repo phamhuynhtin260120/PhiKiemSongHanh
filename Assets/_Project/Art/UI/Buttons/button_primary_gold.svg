@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 160">
+  <defs>
+    <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE48A"/>
+      <stop offset="0.48" stop-color="#F4C95D"/>
+      <stop offset="1" stop-color="#D99238"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF7D1"/>
+      <stop offset="1" stop-color="#9F5D20"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#1C2632" flood-opacity="0.26"/></filter>
+  </defs>
+  <rect x="18" y="18" width="476" height="124" rx="36" fill="#1C2632" opacity="0.18" filter="url(#shadow)"/>
+  <rect x="22" y="14" width="468" height="122" rx="34" fill="url(#edge)"/>
+  <rect x="34" y="24" width="444" height="100" rx="28" fill="url(#fill)"/>
+  <path d="M72 34 H440 C420 52 409 60 391 67 H92 C84 58 78 49 72 34 Z" fill="#FFF7D1" opacity="0.34"/>
+  <path d="M58 80 L92 48 H420 L454 80 L420 112 H92 Z" fill="none" stroke="#FFFFFF" stroke-width="5" opacity="0.45"/>
+  <circle cx="72" cy="80" r="10" fill="#FFF7D1" opacity="0.78"/>
+  <circle cx="440" cy="80" r="10" fill="#FFF7D1" opacity="0.78"/>
+</svg>
+
