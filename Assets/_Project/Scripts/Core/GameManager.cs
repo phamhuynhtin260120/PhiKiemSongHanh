@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -12,6 +13,9 @@ public class GameManager : MonoBehaviour
     [Header("Options")]
     [SerializeField] private bool _spawnOnStart = true;
 
+    [Header("Time Delay")]
+    [SerializeField] private float _timeDelay = 2f;
+
     private GameObject _currentPlayer;
 
     public GameObject CurrentPlayer => _currentPlayer;
@@ -20,8 +24,18 @@ public class GameManager : MonoBehaviour
     {
         if (_spawnOnStart)
         {
-            SpawnPlayer();
+            StartCoroutine(SpawnPlayerAfterDelay());
         }
+    }
+
+    private IEnumerator SpawnPlayerAfterDelay()
+    {
+        if (_timeDelay > 0f)
+        {
+            yield return new WaitForSeconds(_timeDelay);
+        }
+
+        SpawnPlayer();
     }
 
     public GameObject SpawnPlayer()

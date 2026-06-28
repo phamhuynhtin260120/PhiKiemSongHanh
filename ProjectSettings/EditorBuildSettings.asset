@@ -4,6 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SplashScreen.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/MainMenuScreen.unity
+    guid: 94718d28ed8db49ffbc442f6c44ac59c
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
+    com.unity.input.settings: {fileID: 11400000, guid: 55aa151c83d9a407894a86aae0aa0d4d, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2ed406026e0924890884c23f2bebe932, type: 3}

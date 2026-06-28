@@ -152,6 +152,12 @@ Tài liệu thiết kế đầy đủ được duy trì trên Notion, gồm 10 p
 
 ➡️ [**Phi Kiếm Song Hành — Game Design Document (Notion)**](https://app.notion.com/p/384985fa7bc4810f86e8de1e219da5aa)
 
+### Tài liệu trong project
+
+- [`Assets/_Project/Design/GameplayDesign.md`](Assets/_Project/Design/GameplayDesign.md) — gameplay pillars, controls, switch timing, obstacles, scoring và cấu trúc level MVP.
+- [`Assets/_Project/Design/ArtAndContentBible.md`](Assets/_Project/Design/ArtAndContentBible.md) — định hướng hình ảnh, màu gameplay, nhân vật, thế giới, UI, VFX và audio.
+- [`Assets/_Project/Design/MVPBacklog.md`](Assets/_Project/Design/MVPBacklog.md) — milestone triển khai vertical slice theo thứ tự Movement → Switch → Obstacles → Scoring → Level → Polish.
+
 ---
 
 ## ❓ Quyết định còn để mở
