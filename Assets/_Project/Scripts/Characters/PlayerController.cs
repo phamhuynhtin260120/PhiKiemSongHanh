@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [Header("Player")]
+    [SerializeField] private Transform _cameraTarget;
 
-    // Update is called once per frame
-    void Update()
+    private void CameraFollow()
     {
-        
+        if (_cameraTarget != null)
+        {
+            transform.position = _cameraTarget.position;
+            transform.rotation = _cameraTarget.rotation;
+        }
     }
 }

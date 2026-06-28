@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     [Header("Player")]
     [SerializeField] private GameObject _playerPrefab;
+    [SerializeField] private GameObject _playerPrefab2;
 
     [Header("Spawn Points")]
     [SerializeField] private Transform[] _spawnPoints;
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
             StartCoroutine(SpawnPlayerAfterDelay());
         }
     }
-
+    
     private IEnumerator SpawnPlayerAfterDelay()
     {
         if (_timeDelay > 0f)
